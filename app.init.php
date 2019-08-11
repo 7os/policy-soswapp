@@ -1,11 +1,11 @@
 <?php
 // load up app settings
 $conf_path = \str_replace([
-  "/vendor/7os/web-page-policy",
-  "/dev/7os/web-page-policy",
+  "/vendor/7os/web-app-policy",
+  "/dev/7os/web-app-policy",
   "\\vendor\\7os\\web-page-policy",
   "\\dev\\7os\\web-page-policy",
-],"",__DIR__) . "/.system/appdata/7os/web-page-policy";
+],"",__DIR__) . "/.system/appdata/7os/web-app-policy";
 $conf_file = $conf_path . "/app.config";
 
 if (!\file_exists($conf_file) || !\is_readable($conf_file)) {

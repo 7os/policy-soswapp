@@ -1,8 +1,8 @@
 {
-    "name": "7os/web-page-policy",
+    "name": "7os/web-app-policy",
     "description": "7 OS Web - Project support template",
     "keywords": ["php", "javascript","7","seven","os","web","conditions","terms","policy","privacy"],
-    "homepage": "https://github.com/7os/web-page-policy",
+    "homepage": "https://github.com/7os/web-app-policy",
     "type": "library",
     "license": "MIT",
     "authors": [
