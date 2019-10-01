@@ -1,14 +1,14 @@
 <?php
 namespace TymFrontiers;
 use \Michelf\Markdown;
-require_once "app.init.php";
+require_once "../app.init.php";
 require_once APP_BASE_INC;
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" manifest="./site.manifest">
   <head>
     <meta charset="utf-8">
-    <title>Policies | <?php echo PRJ_TITLE; ?></title>
+    <title>Cookie Policy | <?php echo PRJ_TITLE; ?></title>
     <?php include PRJ_INC_ICONSET; ?>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <meta name="keywords" content="<?php echo PRJ_KEYWORDS; ?>">
@@ -33,7 +33,7 @@ require_once APP_BASE_INC;
       <div class="view-space">
         <div class="sec-div padding -p10">
           <?php
-          if (\file_exists(PRJ_ROOT . "/src/prj-policy.md") && $policy = \file_get_contents(PRJ_ROOT . "/src/prj-policy.md")) {
+          if (\file_exists(PRJ_ROOT . "/src/prj-policy-cookie.md") && $policy = \file_get_contents(PRJ_ROOT . "/src/prj-policy-cookie.md")) {
             $policy = Markdown::defaultTransform($policy);
             echo $policy;
           }
