@@ -5,7 +5,7 @@ $conf_path = \str_replace([
   "/dev/7os/web-app-policy",
   "\\vendor\\7os\\web-app-policy",
   "\\dev\\7os\\web-app-policy",
-],"",__DIR__) . "/.system/appdata/7os/web-app-policy";
+],"",__DIR__);
 $conf_file = $conf_path . "/.project.info";
 
 if (!\file_exists($conf_file) || !\is_readable($conf_file)) {
